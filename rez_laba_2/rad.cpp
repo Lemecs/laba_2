@@ -1,20 +1,20 @@
 //rab_1
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
-int main()
-{
-	printf("enter numbers\n");
-	double x = 0.0, y = 0.0;
-	scanf("%lf%lf", &x, &y);
-	if (x > y)
-		printf("%.2lf > %.2lf", x, y);
-	else if (x < y)
-		printf("%.2lf < %.2lf", x, y);
-	else
-		printf("%.2lf = %.2lf", x, y);
-	return 0;
-}
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int main()
+//{
+//	printf("enter numbers\n");
+//	double x = 0.0, y = 0.0;
+//	scanf("%lf%lf", &x, &y);
+//	if (x > y)
+//		printf("%.2lf > %.2lf", x, y);
+//	else if (x < y)
+//		printf("%.2lf < %.2lf", x, y);
+//	else
+//		printf("%.2lf = %.2lf", x, y);
+//	return 0;
+//}
 
 //rab_2
 //#define _CRT_SECURE_NO_WARNINGS
@@ -36,31 +36,34 @@ int main()
 //#include <stdio.h>
 
 //rab_3
-//#define _CRT_SECURE_NO_WARNINGS
-//#include <stdio.h>
-//int main()
-//{
-//	printf("enter day number\n");
-//	int day = 0;
-//	scanf("%d", &day);
-//	if (day == 1)
-//		printf("it is Monday\n");
-//	else if (day == 2)
-//		printf("it is Tuesday\n");
-//	else if (day == 3)
-//		printf("it is Wednesday\n");
-//	else if (day == 4)
-//		printf("it is Thursday\n");
-//	else if (day == 5)
-//		printf("it is Friday\n");
-//	else if (day == 6)
-//		printf("it is Saturday\n");
-//	else if (day == 7)
-//		printf("it is Sunday\n");
-//	else
-//		printf("There is no such day");
-//	return 0;
-//}
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	printf("enter day number\n");
+	int day = 0;
+	scanf("%d", &day);
+	switch (day)
+	{
+	case 1: printf("it is Monday\n");
+		break;
+	case 2: printf("it is Tuesday\n");
+		break;
+	case 3: printf("it is Wednesday\n");
+		break;
+	case 4: printf("it is Thursday\n");
+		break;
+	case 5: printf("it is Friday\n");
+		break;
+	case 6: printf("it is Saturday\n");
+		break;
+	case 7: printf("it is Sunday\n");
+		break;
+	default: printf("There is no such day");
+		break;
+	}
+	return 0;
+}
 
 //rab_4
 //#define _CRT_SECURE_NO_WARNINGS
